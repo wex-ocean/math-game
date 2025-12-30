@@ -114,6 +114,10 @@
     text-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
 }
 
+#keypad-container {
+    width: 100%;
+}
+
 /* Keypad Grid Update */
 .keypad {
     width: 100%;

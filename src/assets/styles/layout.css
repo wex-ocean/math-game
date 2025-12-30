@@ -20,7 +20,8 @@
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    /* Ensure children fill width */
     gap: 2rem;
     min-height: 650px;
     position: relative;
