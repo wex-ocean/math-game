@@ -119,30 +119,42 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    margin-top: auto;
+    /* Push to bottom if space allows */
 }
 
 .keypad-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 16px;
+    width: 100%;
 }
 
 .key {
-    aspect-ratio: 1.4;
+    min-height: 4.5rem;
+    /* Taller keys */
+    width: 100%;
+    /* Ensure full width of grid cell */
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    font-size: 1.75rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    /* Larger Numbers */
     font-weight: 600;
     color: white;
     transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* Remove default padding */
 }
 
 .key:active,
 .key.active-press {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(0.96);
 }
 
 .key-clear {
