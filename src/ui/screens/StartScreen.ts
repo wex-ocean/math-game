@@ -13,6 +13,7 @@ export class StartScreen {
   render() {
     this.element.innerHTML = `
       <div class="content">
+        <img src="/logo.jpg" class="game-logo" alt="Math Blitz Logo" />
         <h1 class="title">Math Blitz</h1>
         <p class="subtitle">Solve as many as you can in 60 seconds!</p>
         
