@@ -69,7 +69,6 @@ export class Keypad {
 
         // Listen to physical keyboard to animate virtual keys
         InputManager.getInstance().subscribe((key) => {
-            let timer = null;
             if (key === 'Enter') {
                 this.animatePress(enterBtn);
                 return;
