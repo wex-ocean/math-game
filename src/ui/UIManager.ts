@@ -37,6 +37,9 @@ export class UIManager {
     private handleStateChange(state: GameState) {
         // 1. Manage Timer Lifecycle
         if (state.status === 'PLAYING') {
+            if (this.timer.getTime() <= 0 && state.timeLeft > 0) {
+                this.timer.reset(state.timeLeft);
+            }
             this.timer.start();
         } else if (state.status === 'IDLE') {
             // Reset handling is done by store re-setting time, but timer object needs sync

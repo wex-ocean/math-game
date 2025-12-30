@@ -75,7 +75,11 @@ export class GameStore {
                 return {
                     ...state,
                     status: 'IDLE',
-                    currentQuestion: null
+                    currentQuestion: null,
+                    timeLeft: 60,
+                    score: 0,
+                    streak: 0,
+                    history: []
                 };
 
             case 'TICK':
